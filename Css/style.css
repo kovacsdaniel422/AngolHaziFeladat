@@ -1,19 +1,49 @@
-/* {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+*{
+    box-sizing: border-box;
 }
-*/
 
 
 /*A login*/
 
 button {
     background-color: red;
-    width: 100%;
+    width: 50%;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-form {
+.download-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.download-cont button{
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.patch1{
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 5px;
+    font-size: 17px;
+    margin: auto;
+    width: 85%;
+}
+
+.login-reg{
     border-left: 2px solid white;
 }
 
@@ -29,15 +59,44 @@ input[type=password] {
     background-color: gray;
 }
 
-.store {
+.merch-cont {
     display: flex;
+}
+
+.abou-cont{
+    background-color: darkolivegreen;
+    border: 3px solid white;
+    margin: auto;
+    width: 85%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.jumping-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+.jumping-links{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    background-color: #333;
+    margin-left: 15px;
+    width: 200px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
 .Artipoint {
     border: 2px solid whitesmoke;
     background-color: darkolivegreen;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
     padding: 5px;
+    margin-bottom: 10px;
 }
 
 .Artipoint a {
@@ -55,7 +114,7 @@ input[type=password] {
 }
 
 .price {
-    color: grey;
+    color: white;
     font-size: 22px;
 }
 
@@ -84,16 +143,20 @@ body {
 
 main {
     width: 60%;
-    margin: 0 auto;
+    margin: auto;
     display: grid;
-    grid-template-areas: "h" "n" "a" "f";
+    grid-template-areas:
+    " h h h "
+    " n n n "
+    " a a a"
+    " f f f ";
     border: 2px solid white;
 }
 
 header {
     background-image: url("../Pics/Háttér.jpeg");
     grid-area: h;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -102,11 +165,12 @@ header {
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
+    padding-left: 15px;
 }
 
 nav {
     grid-area: n;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .topnav {
@@ -137,51 +201,41 @@ article {
     grid-area: a;
     width: 100%;
     display: grid;
+    padding: 5px;
 }
 
 footer {
     grid-area: f;
-    ;
-    border: 1px solid white;
-    background-color: #333
+    /* border: 1px solid white; */
+    background-color: #333;
+    text-align: center;
 }
 
-footer ul li {
-    display: inline-block;
+.report{
+    width: 300px;
+    margin: auto;
 }
 
-nav,
+/* nav,
 article,
 header,
 footer {
     border: groove white 1px;
-}
+} */
 
 h1 {
-    font-size: 50px
+    font-size: 50px;
 }
 
 h2 {
-    font-size: 40px
+    font-size: 40px;
 }
 
 h3 {
-    font-size: 30px
+    font-size: 30px;
 }
 
-ul {
-    padding: 0;
-}
-
-.bal {
-    width: 200px;
-    height: auto;
-    float: left;
-    margin: 8px;
-    border: 3px dotted
-}
-
-.img {
+/* .img {
     width: 200px;
     height: auto;
     margin: 4px;
@@ -189,61 +243,13 @@ ul {
     border-radius: 50%;
     float: right;
     overflow: hidden;
-}
-
-.galleria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
-    padding: 20px;
-}
-
-.galeriakep {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: red 1px solid;
-}
-
-.video {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 500px;
-    padding: 20px;
-}
-
-.videokep {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: red 1px solid;
-}
-
-.table,
-tr,
-td {
-    border: groove white 1px;
-    text-align: center;
-    margin: 10px;
-    max-width: 250px;
-}
-
-.dwnld {
-    max-height: 64px
-}
-
-.thumbnail {
-    max-height: 100px;
-}
+} */
 
 @media screen and (max-width: 1230px) {
     main {
         width: 100%;
         display: grid;
         grid-template-areas: "h" "n" "a" "f";
-    }
-    nav ul li {
-        display: inline-block;
     }
 }
 
@@ -253,27 +259,5 @@ td {
         display: grid;
         grid-template-areas: "h" "n" "a" "f";
         grid-template-columns: auto;
-    }
-    nav ul li {
-        display: block;
-    }
-    p {
-        font-size: 12px;
-        text-align: justify
-    }
-    h1 {
-        font-size: 40px
-    }
-    h2 {
-        font-size: 30px
-    }
-    h3 {
-        font-size: 20px
-    }
-    .video {
-        display: grid;
-        grid-template-columns: 1fr;
-        height: 300px;
-        padding: 20px;
     }
 }

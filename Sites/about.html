@@ -2,7 +2,7 @@
 <html lang="HU">
 
 <head>
-    <title>Main page | Rf2</title>
+    <title>About us | Rf2</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kovács Dániel">
@@ -21,7 +21,7 @@
                 <h4>Shanty-games studio</h4>
             </div>
 
-            <form>
+            <form class="login-reg">
                 <div class="container">
                     <label>Username : </label>
                     <input type="text" placeholder="Enter Username" name="username" required>
@@ -31,9 +31,7 @@
                     <br>
                     <button type="submit">Login</button>
                     <button type="submit">Register</button>
-                    <br>
                     <input type="checkbox" checked="checked"> Remember me
-                    <br>
                 </div>
             </form>
         </header>
@@ -48,12 +46,19 @@
             </div>
         </nav>
         <article>
-            <h2>E-mail: ShantyGames@Shanty.com</h2>
-            <h2>Phone: +01 2 345 6789</h2>
-            <h2></h2>
+            <h2 id="contacts">Contacts</h2>
+            <div class="abou-cont">
+                <p style="font-size: 30px;"><strong>E-mail:</strong> ShantyGames@Shanty.com</p>
+                <p style="font-size: 30px;"><strong>Phone:</strong> +01 2 345 6789</p>
+            </div>
+            <h2 id="team">The team</h2>
+            <div class="abou-cont">
+                <p style="font-size: 30px; font-weight: bold;">Kovács Dániel</p>
+                <p style="font-size: 30px; font-weight: bold;">Dániel László</p>
+            </div>
         </article>
         <footer>
-            <p>@All rights reserved</p>
+            <p>©All rights reserved</p>
         </footer>
     </main>
 </body>

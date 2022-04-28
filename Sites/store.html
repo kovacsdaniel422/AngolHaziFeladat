@@ -2,7 +2,7 @@
 <html lang="HU">
 
 <head>
-    <title>Main page | Rf2</title>
+    <title>Store | Rf2</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kovács Dániel">
@@ -21,7 +21,7 @@
                 <h4>Shanty-games studio</h4>
             </div>
 
-            <form>
+            <form class="login-reg">
                 <div class="container">
                     <label>Username : </label>
                     <input type="text" placeholder="Enter Username" name="username" required>
@@ -31,9 +31,7 @@
                     <br>
                     <button type="submit">Login</button>
                     <button type="submit">Register</button>
-                    <br>
                     <input type="checkbox" checked="checked"> Remember me
-                    <br>
                 </div>
             </form>
         </header>
@@ -48,7 +46,13 @@
             </div>
         </nav>
         <article>
-            <div class="store">
+            <div class="jumping-cont">
+                <a href="#merch" class="jumping-links">Jump to Merches</a>
+                <a href="#skins" class="jumping-links">Jump to Skins</a>
+            </div>
+
+            <h2 id="merch">Merches</h2>
+            <div class="merch-cont">
                 <div class="card">
                     <img src="../Pics/bogre.png" alt="Denim Jeans" style="width:100%">
                     <h1>Red force 2 mug</h1>
@@ -64,9 +68,14 @@
                     <p><button>Add to Cart</button></p>
                 </div>
             </div>
+
+            <h2 id="skins">Skins</h2>
+            <div class="skins-cont">
+                <p style="font-size: 20px;">Skins are coming soon....</p>
+            </div>
         </article>
         <footer>
-            <p>@All rights reserved</p>
+            <p>©All rights reserved</p>
         </footer>
     </main>
 </body>
