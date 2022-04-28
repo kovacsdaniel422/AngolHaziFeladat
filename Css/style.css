@@ -33,6 +33,18 @@ input[type=password] {
     display: flex;
 }
 
+.Artipoint {
+    border: 2px solid whitesmoke;
+    background-color: darkolivegreen;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.Artipoint a {
+    font-size: 20px;
+    color: #f2f2f2;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: gray;
