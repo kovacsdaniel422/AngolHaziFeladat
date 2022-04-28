@@ -2,7 +2,7 @@
 <html lang="HU">
 
 <head>
-    <title>Main page | Rf2</title>
+    <title>Community | Rf2</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kovács Dániel">
@@ -21,7 +21,7 @@
                 <h4>Shanty-games studio</h4>
             </div>
 
-            <form>
+            <form class="login-reg">
                 <div class="container">
                     <label>Username : </label>
                     <input type="text" placeholder="Enter Username" name="username" required>
@@ -31,9 +31,7 @@
                     <br>
                     <button type="submit">Login</button>
                     <button type="submit">Register</button>
-                    <br>
                     <input type="checkbox" checked="checked"> Remember me
-                    <br>
                 </div>
             </form>
         </header>
@@ -48,6 +46,11 @@
             </div>
         </nav>
         <article>
+            <div class="jumping-cont">
+                <a href="#discussion" class="jumping-links">Jump to Discussions</a>
+                <a href="#report-appeal" class="jumping-links">Jump to Report</a>
+            </div>
+            <h2 id="discussion">Discussions</h2>
             <div class="Artipoint">
                 <a href="http://" target="_blank" rel="noopener noreferrer">WHY IS THIS GAME SO LAGGY???</a>
                 <p>IT'S LITELARY A FREAKING BROWSER GAME?? HOW?!?!</p>
@@ -69,9 +72,22 @@
                 <p>I downloaded this game recently and it seems like there's not much going around. when will we recieve new content</p>
             </div>
 
+            <h2 id="report-appeal">Report & appeal</h2>
+            <div class="report">
+                <form>
+                    <label for="email">YOUR EMAIL ADDRESS*</label><br>
+                    <input type="text" required><br>
+                    <label for="subj">SUBJECT*</label><br>
+                    <input type="text" required><br>
+                    <label for="desc">DESCRIPTION*</label><br>
+                    <textarea name="desc" id="desc" cols="38" rows="8"></textarea><br>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>   
         </article>
         <footer>
-            <p>@All rights reserved</p>
+            <p>©All rights reserved</p>
         </footer>
     </main>
 </body>

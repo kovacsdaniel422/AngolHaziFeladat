@@ -2,7 +2,7 @@
 <html lang="HU">
 
 <head>
-    <title>Main page | Rf2</title>
+    <title>Game | Rf2</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kovács Dániel">
@@ -21,7 +21,7 @@
                 <h4>Shanty-games studio</h4>
             </div>
 
-            <form>
+            <form class="login-reg">
                 <div class="container">
                     <label>Username : </label>
                     <input type="text" placeholder="Enter Username" name="username" required>
@@ -31,9 +31,7 @@
                     <br>
                     <button type="submit">Login</button>
                     <button type="submit">Register</button>
-                    <br>
                     <input type="checkbox" checked="checked"> Remember me
-                    <br>
                 </div>
             </form>
         </header>
@@ -48,10 +46,31 @@
             </div>
         </nav>
         <article>
-            <div class="game"></div>
+            <div class="jumping-cont">
+                <a href="#donwload" class="jumping-links">Jump to Download</a>
+                <a href="#pnotes" class="jumping-links">Jump to Patch notes</a>
+            </div>
+
+            <h2 id="download">Download</h2>
+            <div class="download-cont">
+                <p style="font-size: larger;">Donwload the game here:</p><button>DOWNLOAD</button>
+            </div>
+            <h2 id="pnotes">Patch notes</h2>
+            <div class="pnotes-cont">
+                <div class="patch1">
+                    <h3>Patch 1.0</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum laudantium eligendi, 
+                        sunt delectus magnam nostrum animi recusandae ratione 
+                        quisquam laborum officia omnis 
+                        voluptates ex tempore tenetur maxime. 
+                        Nulla, reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, at porro 
+                        quo magnam fugit, quidem sequi unde eligendi incidunt nemo culpa nostrum quibusdam eos 
+                        quod cum repellendus provident id quam.</p>
+                </div>
+            </div>
         </article>
         <footer>
-            <p>@All rights reserved</p>
+            <p>©All rights reserved</p>
         </footer>
     </main>
 </body>
