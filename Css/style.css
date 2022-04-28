@@ -1,15 +1,77 @@
-* {
+/* {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+*/
+
+
+/*A login*/
+
+button {
+    background-color: red;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    border-left: 2px solid white;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 25px;
+    background-color: gray;
+}
+
+.store {
+    display: flex;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: gray;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
 }
 
 body {
-    background-color: black;
-    color: white
+    background-image: url("../Pics/nagyhatter.png");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
     width: 60%;
-    backdrop-filter: blur(6px);
     margin: 0 auto;
     display: grid;
     grid-template-areas: "h" "n" "a" "f";
@@ -17,12 +79,17 @@ main {
 }
 
 header {
-    background-image: url("../Pics/Headerbg1.jpg");
+    background-image: url("../Pics/Háttér.jpeg");
     grid-area: h;
     border: 1px solid white;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
 }
 
 nav {
@@ -50,7 +117,7 @@ nav {
 }
 
 .topnav a.active {
-    background-color: #03a39b;
+    background-color: red;
     color: white;
 }
 
@@ -76,12 +143,6 @@ article,
 header,
 footer {
     border: groove white 1px;
-}
-
-p {
-    font-size: 20px;
-    text-align: justify;
-    margin: 20px;
 }
 
 h1 {
