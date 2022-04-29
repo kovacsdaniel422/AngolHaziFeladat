@@ -43,8 +43,21 @@ button {
     width: 85%;
 }
 
+.homep{
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 5px;
+    font-size: 17px;
+    margin: auto;
+    width: 85%;
+}
+
 .login-reg{
-    border-left: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 input[type=text],
@@ -55,8 +68,7 @@ input[type=password] {
 }
 
 .container {
-    padding: 25px;
-    background-color: gray;
+    /* float: right; */
 }
 
 .merch-cont {
@@ -154,9 +166,8 @@ main {
 }
 
 header {
-    background-image: url("../Pics/Háttér.jpeg");
+    background-image: url("../Pics/hatter.jpg");
     grid-area: h;
-    /* border: 1px solid white; */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -165,12 +176,11 @@ header {
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
-    padding-left: 15px;
+    padding: 15px;
 }
 
 nav {
     grid-area: n;
-    /* border: 1px solid white; */
 }
 
 .topnav {
@@ -206,7 +216,6 @@ article {
 
 footer {
     grid-area: f;
-    /* border: 1px solid white; */
     background-color: #333;
     text-align: center;
 }
@@ -215,13 +224,6 @@ footer {
     width: 300px;
     margin: auto;
 }
-
-/* nav,
-article,
-header,
-footer {
-    border: groove white 1px;
-} */
 
 h1 {
     font-size: 50px;
@@ -235,29 +237,13 @@ h3 {
     font-size: 30px;
 }
 
-/* .img {
-    width: 200px;
-    height: auto;
-    margin: 4px;
-    border: 5px dashed cyan;
-    border-radius: 50%;
-    float: right;
-    overflow: hidden;
-} */
-
 @media screen and (max-width: 1230px) {
     main {
         width: 100%;
-        display: grid;
-        grid-template-areas: "h" "n" "a" "f";
     }
 }
 
 @media screen and (max-width: 800px) {
     main {
-        width: 100%;
-        display: grid;
-        grid-template-areas: "h" "n" "a" "f";
-        grid-template-columns: auto;
     }
 }
